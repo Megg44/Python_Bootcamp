@@ -1,4 +1,5 @@
-Num1 = int(input())
-Num2 = int(input())
+Num1 = input()
+Num2 = input()
+Sum = int(Num1) + int(Num2)
 
-print("%d + %d = %d" %(Num1, Num2, Num1 + Num2))
+print(Num1 + " + " + Num2 + " = " + str(Sum))
