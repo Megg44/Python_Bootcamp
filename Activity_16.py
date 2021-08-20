@@ -3,8 +3,8 @@ def stringin():
 
 def stringtolist(s):
     my_list = list(map(lambda x : x.partition("="), s.split(";")))
-    new_list = [(x, z) for (x, y, z) in my_list]
-    return new_list
+    return [(x, z) for (x, y, z) in my_list]
+    
     
 def printlist(list_of_list):
     print(list_of_tuples)
