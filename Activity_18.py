@@ -3,7 +3,7 @@ def stringin():
 
 def stringtolist(s):
     my_list = list(map(lambda x : x.partition("="), s.split(";")))
-    return dict([(z, x) for (x, y, z) in my_list])
+    return dict([(x, z) for (x, y, z) in my_list])
 
 def printlist(list_of_list):
     print(list_of_list)
@@ -14,6 +14,3 @@ def main():
     printlist(my_list)
 
 main()
-
-    
-    
