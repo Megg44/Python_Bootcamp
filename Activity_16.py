@@ -3,11 +3,7 @@ def stringin():
 
 def stringtolist(s):
     my_list = list(map(lambda x : x.partition("="), s.split(";")))
-    new_list = []
-    for e in my_list:
-        x, y, z = e
-        temp = (x, z)
-        new_list.append(temp)
+    new_list = [(x, z) for (x, y, z) in my_list]
     return new_list
     
 def printlist(list_of_list):
