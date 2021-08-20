@@ -7,7 +7,7 @@ def stringtolist(s):
 
 def listtostring(my_list):
     newList = ["=".join(e) for e in my_list]
-    return ";".join(map(str, newList))
+    return ";".join(newList)
     
     
 def printlist(list_of_list):
